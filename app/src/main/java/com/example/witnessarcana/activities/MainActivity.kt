@@ -1,5 +1,6 @@
 package com.example.witnessarcana.activities
 
+import android.graphics.Typeface
 import android.os.Bundle
 import android.util.Log
 import android.view.View
@@ -68,6 +69,14 @@ class MainActivity : AppCompatActivity() {
 
 
     // For changing color of navbar buttons.
+    private fun setNavbarColors(mode: Int) {
+
+
+
+    }
+
+
+
     /*
     private fun setNavbarColors(mode: Int) {
 
@@ -90,22 +99,7 @@ class MainActivity : AppCompatActivity() {
     */
 
 
-    // For changing color of "Minor Arcana" filters.
-    private fun setMinorFilterColors(mode: Int) {
-        val black = ContextCompat.getColor(applicationContext,R.color.black)
-        binding.btnFilterWands.setBackgroundColor(black)
-        binding.btnFilterCups.setBackgroundColor(black)
-        binding.btnFilterPentacles.setBackgroundColor(black)
-        binding.btnFilterSwords.setBackgroundColor(black)
 
-        val gray = ContextCompat.getColor(applicationContext,R.color.gray)
-        when (mode) {
-            1 -> { binding.btnFilterWands.setBackgroundColor(gray) }
-            2 -> { binding.btnFilterCups.setBackgroundColor(gray) }
-            3 -> { binding.btnFilterPentacles.setBackgroundColor(gray) }
-            4 -> { binding.btnFilterSwords.setBackgroundColor(gray) }
-        }
-    }
 
 
 }

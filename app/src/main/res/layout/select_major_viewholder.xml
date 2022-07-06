@@ -5,6 +5,7 @@
     android:id="@+id/viewhodler_cnst"
     android:layout_width="match_parent"
     android:layout_height="100dp"
+    android:layout_marginBottom="4dp"
     android:background="@color/dark">
 
     <TextView
@@ -22,7 +23,7 @@
         android:id="@+id/cardView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="24dp"
         app:cardCornerRadius="64dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -40,7 +41,7 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
+        android:layout_marginStart="48dp"
         android:fontFamily="@font/dt_nightingale"
         android:textColor="@color/light"
         android:textSize="20sp"

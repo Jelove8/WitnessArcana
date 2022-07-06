@@ -24,7 +24,9 @@
         app:layout_constraintBottom_toTopOf="@+id/textView6"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        app:layout_constraintTop_toBottomOf="@+id/textView4" >
+
+    </androidx.recyclerview.widget.RecyclerView>
 
     <LinearLayout
         android:id="@+id/minor_filters"
@@ -37,74 +39,60 @@
 
         <TextView
             android:id="@+id/btn_filter_majors"
-            android:layout_width="76dp"
+            android:layout_width="80dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:backgroundTint="@color/dark"
-            android:fontFamily="@font/dt_nightingale"
-            android:paddingTop="16dp"
-            android:paddingBottom="16dp"
-            android:text="Majors"
+            android:paddingTop="24dp"
+            android:paddingBottom="28dp"
+            android:text="Majors\n\n"
             android:textAlignment="center"
             android:textColor="@color/light"
             android:textSize="12sp" />
 
         <TextView
             android:id="@+id/btn_filter_wands"
-            android:layout_width="76dp"
+            android:layout_width="80dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
             android:layout_weight="1"
-            android:backgroundTint="@color/dark"
-            android:fontFamily="@font/dt_nightingale"
-            android:paddingTop="16dp"
-            android:paddingBottom="16dp"
-            android:text="Wands"
+            android:paddingTop="24dp"
+            android:paddingBottom="28dp"
+            android:text="Wands\n\n"
             android:textAlignment="center"
             android:textColor="@color/light"
             android:textSize="12sp" />
 
         <TextView
             android:id="@+id/btn_filter_cups"
-            android:layout_width="76dp"
+            android:layout_width="80dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
             android:layout_weight="1"
-            android:backgroundTint="@color/dark"
-            android:fontFamily="@font/dt_nightingale"
-            android:paddingTop="16dp"
-            android:paddingBottom="16dp"
-            android:text="Cups"
+            android:paddingTop="24dp"
+            android:paddingBottom="28dp"
+            android:text="Cups\n\n"
             android:textAlignment="center"
             android:textColor="@color/light"
             android:textSize="12sp" />
 
         <TextView
             android:id="@+id/btn_filter_pentacles"
-            android:layout_width="76dp"
+            android:layout_width="80dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
             android:layout_weight="1"
-            android:backgroundTint="@color/dark"
-            android:fontFamily="@font/dt_nightingale"
-            android:paddingTop="16dp"
-            android:paddingBottom="16dp"
-            android:text="Pentacles"
+            android:paddingTop="24dp"
+            android:paddingBottom="28dp"
+            android:text="Pentacles\n\n"
             android:textAlignment="center"
             android:textColor="@color/light"
             android:textSize="12sp" />
 
         <TextView
             android:id="@+id/btn_filter_swords"
-            android:layout_width="76dp"
+            android:layout_width="80dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
             android:layout_weight="1"
-            android:backgroundTint="@color/dark"
-            android:fontFamily="@font/dt_nightingale"
-            android:paddingTop="16dp"
-            android:paddingBottom="16dp"
-            android:text="Swords"
+            android:paddingTop="24dp"
+            android:paddingBottom="28dp"
+            android:text="Swords\n\n"
             android:textAlignment="center"
             android:textColor="@color/light"
             android:textSize="12sp" />
@@ -118,7 +106,6 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
         android:background="@android:drawable/dark_header"
-        android:fontFamily="@font/dt_nightingale"
         android:textAlignment="center"
         android:textColor="@color/light"
         app:layout_constraintEnd_toEndOf="parent"
@@ -132,7 +119,6 @@
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:background="@android:drawable/dark_header"
-        android:fontFamily="@font/dt_nightingale"
         android:textAlignment="center"
         android:textColor="@color/light"
         app:layout_constraintBottom_toTopOf="@+id/minor_filters"
