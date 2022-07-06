@@ -3,8 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/jelov/AndroidStudioProjects/WitnessArcana/app/src/main/res/drawable/circle.xml" value="0.5125" />
+        <entry key="..\:/Users/jelov/AndroidStudioProjects/WitnessArcana/app/src/main/res/font/dt_nightingale.xml" value="0.5485188968335035" />
         <entry key="..\:/Users/jelov/AndroidStudioProjects/WitnessArcana/app/src/main/res/layout/activity_main.xml" value="0.5" />
         <entry key="..\:/Users/jelov/AndroidStudioProjects/WitnessArcana/app/src/main/res/layout/app_bar.xml" value="0.5208333333333334" />
+        <entry key="..\:/Users/jelov/AndroidStudioProjects/WitnessArcana/app/src/main/res/layout/fragment_card_reader.xml" value="0.5208333333333334" />
         <entry key="..\:/Users/jelov/AndroidStudioProjects/WitnessArcana/app/src/main/res/layout/main_app_bar.xml" value="0.5208333333333334" />
         <entry key="..\:/Users/jelov/AndroidStudioProjects/WitnessArcana/app/src/main/res/layout/major_arcana_list_viewholder.xml" value="0.5208333333333334" />
         <entry key="..\:/Users/jelov/AndroidStudioProjects/WitnessArcana/app/src/main/res/layout/major_fragment.xml" value="0.5208333333333334" />

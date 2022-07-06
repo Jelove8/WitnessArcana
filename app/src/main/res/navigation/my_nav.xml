@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/cardReaderFragment">
+
+    <fragment
+        android:id="@+id/cardReaderFragment"
+        android:name="com.example.witnessarcana.activities.CardReaderFragment"
+        android:label="fragment_card_reader"
+        tools:layout="@layout/fragment_card_reader" >
+        <action
+            android:id="@+id/action_cardReaderFragment_to_pageReaderFragment"
+            app:destination="@id/pageReaderFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pageReaderFragment"
+        android:name="com.example.witnessarcana.PageReaderFragment"
+        android:label="fragment_page_reader"
+        tools:layout="@layout/fragment_page_reader" >
+        <action
+            android:id="@+id/action_pageReaderFragment_to_cardReaderFragment"
+            app:destination="@id/cardReaderFragment" />
+    </fragment>
+</navigation>
