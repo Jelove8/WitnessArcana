@@ -1,6 +1,5 @@
 package com.example.witnessarcana.adapters
 
-import android.media.Image
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
@@ -8,13 +7,13 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.constraintlayout.widget.ConstraintLayout
-import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.example.witnessarcana.R
 import com.example.witnessarcana.models.TarotCard
 
 class TarotDeckAdapter(
-    var tarotDeck: MutableList<TarotCard>
+    private var tarotDeck: MutableList<TarotCard>,
+    private val itemClickCallback: ((TarotCard) -> Unit)?
 ) : RecyclerView.Adapter<TarotCardViewHolder>() {
 
     init {
@@ -23,7 +22,7 @@ class TarotDeckAdapter(
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TarotCardViewHolder {
         val view = LayoutInflater.from(parent.context)
-            .inflate(R.layout.select_major_viewholder, parent, false)
+            .inflate(R.layout.viewholder_tarot_card, parent, false)
 
         return TarotCardViewHolder(view)
     }
@@ -31,7 +30,11 @@ class TarotDeckAdapter(
     override fun onBindViewHolder(holder: TarotCardViewHolder, position: Int) {
         val currentCard = tarotDeck[position]
         holder.tvTitle.text = currentCard.title
-        holder.setCardImage(currentCard.tag)
+        holder.setCardImage(currentCard.id)
+
+        holder.cnst.setOnClickListener {
+            itemClickCallback?.invoke(tarotDeck[position])
+        }
     }
 
 
@@ -49,9 +52,10 @@ class TarotCardViewHolder(ItemView:View) : RecyclerView.ViewHolder(ItemView) {
 
     val tvTitle: TextView = itemView.findViewById(R.id.textView)
     val imageView: ImageView = itemView.findViewById(R.id.iv)
+    val cnst: ConstraintLayout = itemView.findViewById(R.id.viewhodler_cnst)
 
-    fun setCardImage(card_tag: String) {
-        when (card_tag) {
+    fun setCardImage(card_id: String) {
+        when (card_id) {
             "maj0" -> { imageView.setImageResource(R.drawable.fool) }
             "maj1" -> { imageView.setImageResource(R.drawable.magician) }
             "maj2" -> { imageView.setImageResource(R.drawable.priestess) }

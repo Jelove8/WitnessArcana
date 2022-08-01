@@ -14,5 +14,6 @@
         <!-- Customize your theme here. -->
         <item name="android:fontFamily">@font/dt_nightingale</item>
         <item name="fontFamily">@font/dt_nightingale</item>
+        <item name="android:textColor">@color/light</item>
     </style>
 </resources>

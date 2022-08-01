@@ -5,7 +5,7 @@ import com.example.witnessarcana.models.TarotCard
 
 class CardReaderViewModel : ViewModel() {
 
-    private lateinit var currentCard: TarotCard
+    private var currentCard: TarotCard = TarotCard("Error","error","error",0)
 
     fun setCurrentCard(newCard: TarotCard) {
         currentCard = newCard

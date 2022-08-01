@@ -10,7 +10,7 @@
 
     <include
         android:id="@+id/include_app_bar"
-        layout="@layout/app_bar"
+        layout="@layout/main_app_bar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
@@ -24,13 +24,13 @@
         app:layout_constraintBottom_toTopOf="@+id/textView6"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" >
+        app:layout_constraintTop_toBottomOf="@+id/include_app_bar">
 
     </androidx.recyclerview.widget.RecyclerView>
 
     <LinearLayout
         android:id="@+id/minor_filters"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -43,7 +43,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:paddingTop="24dp"
-            android:paddingBottom="28dp"
+            android:paddingBottom="20dp"
             android:text="Majors\n\n"
             android:textAlignment="center"
             android:textColor="@color/light"
@@ -55,7 +55,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:paddingTop="24dp"
-            android:paddingBottom="28dp"
+            android:paddingBottom="20dp"
             android:text="Wands\n\n"
             android:textAlignment="center"
             android:textColor="@color/light"
@@ -67,7 +67,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:paddingTop="24dp"
-            android:paddingBottom="28dp"
+            android:paddingBottom="20dp"
             android:text="Cups\n\n"
             android:textAlignment="center"
             android:textColor="@color/light"
@@ -79,7 +79,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:paddingTop="24dp"
-            android:paddingBottom="28dp"
+            android:paddingBottom="20dp"
             android:text="Pentacles\n\n"
             android:textAlignment="center"
             android:textColor="@color/light"
@@ -91,26 +91,12 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:paddingTop="24dp"
-            android:paddingBottom="28dp"
+            android:paddingBottom="20dp"
             android:text="Swords\n\n"
             android:textAlignment="center"
             android:textColor="@color/light"
             android:textSize="12sp" />
     </LinearLayout>
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="0dp"
-        android:layout_height="2dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="8dp"
-        android:background="@android:drawable/dark_header"
-        android:textAlignment="center"
-        android:textColor="@color/light"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/include_app_bar" />
 
     <TextView
         android:id="@+id/textView6"
@@ -124,5 +110,13 @@
         app:layout_constraintBottom_toTopOf="@+id/minor_filters"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainerView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

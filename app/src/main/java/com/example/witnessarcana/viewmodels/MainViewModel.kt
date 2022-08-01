@@ -13,11 +13,11 @@ class MainViewModel : ViewModel() {
     private var minorFiltersShowing: Boolean = false
 
 
-    fun getFilteredCards(filter: String): MutableList<TarotCard> {
-        currentFilter = filter
+    fun getFilteredCards(suite_filter: String): MutableList<TarotCard> {
+        currentFilter = suite_filter
         val filteredDeck = mutableListOf<TarotCard>()
         tarotDeck.deck.forEach {
-            if (it.tag.contains(filter)) {
+            if (it.suite.contains(suite_filter)) {
                 filteredDeck.add(it)
             }
         }
